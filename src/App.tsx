@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Shop from './components/Shop'
+import Shop from './pages/Shop'
 function App() {
   return (
     <div className="App">
