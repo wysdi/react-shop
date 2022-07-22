@@ -9,13 +9,12 @@ function Footer(){
                             <div className="col-lg-4 col-md-6 col-sm-7">
                                 <div className="footer__about">
                                     <div className="footer__logo">
-                                        <a href="./index.html">
-                                            <img src="img/logo.png" alt="" />
+                                        <a href="/">
+                                            <img src="andita-1.png" alt="" width={160} />
                                         </a>
                                     </div>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod tempor incididunt cilisis.
+                                        Premium High Quality Curated By Owner
                                     </p>
                                     {/*<div className="footer__payment">*/}
                                     {/*    <a href="#">*/}

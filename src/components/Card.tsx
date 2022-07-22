@@ -1,5 +1,6 @@
 
 import React, { FC } from 'react';
+import {Link} from "react-router-dom";
 
 interface Props {
     product: {
@@ -14,10 +15,9 @@ interface Props {
     }
 }
 const Card:FC<Props> = (props) => {
-    console.log(props.product)
     const { product } = props
     const { id, fields } = product
-
+    console.log(fields)
     let imageURL = 'https://dummyimage.com/270x360/000/fff'
 
     if (fields.Attachments ){
@@ -25,30 +25,31 @@ const Card:FC<Props> = (props) => {
     }
     return (
         <>
-            <div className="col-lg-4 col-md-6" >
+            <div className="col-lg-4 col-md-6" key={id}>
+                <Link to={`/${id}`}>
                 <div className="product__item">
                     <div
                         className="product__item__pic set-bg"
                         style={{backgroundImage:`url("${imageURL}")`}}
                     >
-                        <div className="label new">New</div>
-                        <ul className="product__hover">
-                            <li>
-                                <a href="img/shop/shop-1.jpg" className="image-popup">
-                                    <span className="arrow_expand" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span className="icon_heart_alt" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span className="icon_bag_alt" />
-                                </a>
-                            </li>
-                        </ul>
+                        {/*<div className="label new">New</div>*/}
+                        {/*<ul className="product__hover">*/}
+                        {/*    <li>*/}
+                        {/*        <a href="img/shop/shop-1.jpg" className="image-popup">*/}
+                        {/*            <span className="arrow_expand" />*/}
+                        {/*        </a>*/}
+                        {/*    </li>*/}
+                        {/*    <li>*/}
+                        {/*        <a href="#">*/}
+                        {/*            <span className="icon_heart_alt" />*/}
+                        {/*        </a>*/}
+                        {/*    </li>*/}
+                        {/*    <li>*/}
+                        {/*        <a href="#">*/}
+                        {/*            <span className="icon_bag_alt" />*/}
+                        {/*        </a>*/}
+                        {/*    </li>*/}
+                        {/*</ul>*/}
                     </div>
                     <div className="product__item__text">
                         <h6>
@@ -64,6 +65,7 @@ const Card:FC<Props> = (props) => {
                         <div className="product__price">Rp {fields.Price}</div>
                     </div>
                 </div>
+                </Link>
             </div>
         </>
     )
