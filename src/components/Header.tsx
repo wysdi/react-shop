@@ -6,7 +6,7 @@ function Header(){
                     <div className="row">
                         <div className="col-xl-3 col-lg-2">
                             <div className="header__logo">
-                                <a href="/"><img src="andita-1.png" alt="" width={'50%'} /></a>
+                                <a href="/"><img src="andita.jpeg" alt="" width={'50%'} /></a>
                             </div>
                         </div>
                         <div className="col-xl-6 col-lg-7">

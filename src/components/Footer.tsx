@@ -10,7 +10,7 @@ function Footer(){
                                 <div className="footer__about">
                                     <div className="footer__logo">
                                         <a href="/">
-                                            <img src="andita-1.png" alt="" width={160} />
+                                            <img src="andita.jpeg" alt="" width={160} />
                                         </a>
                                     </div>
                                     <p>
@@ -36,23 +36,23 @@ function Footer(){
                                 </div>
                             </div>
                             <div className="col-lg-2 col-md-3 col-sm-5">
-                                <div className="footer__widget">
-                                    <h6>Quick links</h6>
-                                    <ul>
-                                        <li>
-                                            <a href="#">About</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Blogs</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Contact</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">FAQ</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                {/*<div className="footer__widget">*/}
+                                {/*    <h6>Quick links</h6>*/}
+                                {/*    <ul>*/}
+                                {/*        <li>*/}
+                                {/*            <a href="#">About</a>*/}
+                                {/*        </li>*/}
+                                {/*        <li>*/}
+                                {/*            <a href="#">Blogs</a>*/}
+                                {/*        </li>*/}
+                                {/*        <li>*/}
+                                {/*            <a href="#">Contact</a>*/}
+                                {/*        </li>*/}
+                                {/*        <li>*/}
+                                {/*            <a href="#">FAQ</a>*/}
+                                {/*        </li>*/}
+                                {/*    </ul>*/}
+                                {/*</div>*/}
                             </div>
                             <div className="col-lg-2 col-md-3 col-sm-4">
                                 {/*<div className="footer__widget">*/}
