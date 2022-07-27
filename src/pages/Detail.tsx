@@ -143,6 +143,7 @@ const Detail = () => {
                         {/*    </div>*/}
                         {/*</div>*/}
                     </div>
+                    <div style={{marginBottom: 30}}></div>
                     <div className="row">
                         <div className="col-lg-12 text-center">
                             <div className="related__title">
