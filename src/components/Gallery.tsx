@@ -19,17 +19,18 @@ const Gallery:FC<Props> = (props) => {
         focusOnSelect: true,
         asNavFor:nav2,
         arrows: false,
+        infinite:false
     }
 
     const sliderSetting = {
-        dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         asNavFor:nav1,
         fade: true,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        dots: false
     };
 
     return (
@@ -40,7 +41,9 @@ const Gallery:FC<Props> = (props) => {
                     {
                         props.items.map((item, index) => (
                             <div key={`img-nav-${index}`}>
+                                {/*<img src="https://dummyimage.com/230x360" />*/}
                                 <img src={item.url} />
+
                             </div>
                         ))
                     }
@@ -52,12 +55,13 @@ const Gallery:FC<Props> = (props) => {
                 {/*</a>*/}
                 </Slider>
             </div>
-            <div className="product__details__slider__content">
+            <div className="product__details__slider__content owl">
                 <Slider {...sliderSetting} ref={slider => setNav2(slider)  }>
                     {
                         props.items.map((item, index) => (
-                            <div className="product__big__img" key={`image-${index}`}>
-                                <img src={item.url}  />
+                            <div key={`image-${index}`} style={{}}>
+                                <img className="product__big__img" src={item.url}  />
+                                {/*<img className="product__big__img" src="https://dummyimage.com/259x360"  />*/}
                             </div>
                         ))
                     }
