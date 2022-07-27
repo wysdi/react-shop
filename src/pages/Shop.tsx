@@ -39,6 +39,8 @@ const Shop: FC = () =>{
 
     }
 
+
+    // @ts-ignore
     return (
         <>
             {/* Shop Section Begin */}
@@ -52,14 +54,14 @@ const Shop: FC = () =>{
                                     pageStart={0}
                                     loadMore={loadProducts}
                                     hasMore={hasMoreItems}
-                                    loader={<div className="text-center">loading data ...</div>}>
+                                    loader={<div className="text-center" style={{position: 'relative'}}><div className="loader" ></div></div>}>
                                     <div className={'row'}>
                                     {products.map((product, i) =>
                                         (<Card product={product}/>)
                                     )}
                                     </div>
                                 </InfiniteScroll>
-                                {hasMoreItems ? "" : <div className="text-center">no data anymore ...</div> }
+                                {/*{hasMoreItems ? "" : <div className="text-center">no data anymore ...</div> }*/}
                         </div>
                     </div>
                 </div>
